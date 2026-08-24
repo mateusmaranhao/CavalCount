@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-caval-dark: #23282B;
+  --color-caval-gold-light: #E5C365;
+  --color-caval-gold: #C89B3C;
+  --color-caval-gold-dark: #8A6621;
+  --color-caval-beige: #EADCB9;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#FAF8F5] text-caval-dark antialiased selection:bg-caval-gold-light/30 selection:text-caval-dark;
+  }
+}

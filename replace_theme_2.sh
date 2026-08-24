@@ -1,0 +1,21 @@
+#!/bin/bash
+find src -type f -name "*.tsx" | while read -r file; do
+  sed -i 's/bg-indigo-200/bg-caval-gold\/30/g' "$file"
+  sed -i 's/bg-emerald-200/bg-caval-gold-light\/30/g' "$file"
+  sed -i 's/border-emerald-200/border-caval-gold-light\/40/g' "$file"
+  sed -i 's/shadow-indigo-200/shadow-caval-gold\/20/g' "$file"
+  sed -i 's/shadow-emerald-500\/30/shadow-caval-gold\/30/g' "$file"
+  sed -i 's/text-slate-800/text-caval-dark\/90/g' "$file"
+  sed -i 's/text-slate-700/text-caval-dark\/80/g' "$file"
+  sed -i 's/text-slate-200/text-caval-beige/g' "$file"
+  sed -i 's/text-slate-100/text-white/g' "$file"
+  sed -i 's/bg-slate-100/bg-caval-gold-light\/20/g' "$file"
+  sed -i 's/bg-indigo-50/bg-caval-gold\/10/g' "$file"
+  sed -i 's/bg-emerald-50/bg-caval-gold-light\/10/g' "$file"
+  sed -i 's/bg-emerald-100\/50/bg-caval-gold-light\/20/g' "$file"
+  sed -i 's/bg-amber-500\/20/bg-caval-gold\/20/g' "$file"
+  sed -i 's/bg-amber-100\/50/bg-caval-gold\/10/g' "$file"
+  sed -i 's/bg-slate-600\/30/bg-caval-dark\/30/g' "$file"
+  sed -i 's/bg-indigo-100/bg-caval-gold\/20/g' "$file"
+  sed -i 's/5519993948365/5519971468014/g' "$file"
+done
